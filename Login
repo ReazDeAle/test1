@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 2px aqua;
+}
+body {
+    background-color: white;
+}
+.container {
+    max-width: 300px;
+    border: 5px dotted aqua;
+    margin: 60px auto;
+    border-radius: 30px;
+    background:radial-gradient(aqua, black, black, aqua, black, black);
+    animation: con 5s linear infinite;
+}
+.Login {
+    max-width: 300px;
+    margin: 0px auto;
+    border: 2px solid aqua;
+    border-radius: 30px;
+    /* background-color: rgb(8, 71, 71); */
+    /* box-shadow: 1px 1px 1px aqua; */
+    padding-bottom: 10px;
+    position: relative;
+}
+h2 {
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+input[type=text], input[type=password] {
+    width: 90%;
+    margin-top: 5px;
+    margin-left: 5%;
+    padding: 10px 0 10px 5px;
+    font-size: 20px;
+    border: 2px solid teal;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px 1px aqua;
+}
+.Login p {
+    margin-left: 5%;
+    margin-top: 10px;
+    font-size: 12px;
+}
+button {
+    box-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px white;
+    border-radius: 10px;
+    border: 2px solid teal;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 20px;
+    color: aqua;
+    background-color: black;
+}
+button:hover {
+    box-shadow: none;
+    text-shadow: 4px 4px 4px black;
+    border: 2px solid teal;
+    background-color: aqua;
+    color: white;
+    box-shadow: 2px 2px 2px aqua;
+}
+button:active {
+    background-color: white;
+    color: aqua;
+}
+a {
+    margin-left: 42%;
+    color: rgb(2, 39, 39);
+}
+ul {
+    text-align: center;
+}
+.k1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px dotted aqua;
+    position: absolute;
+    background: radial-gradient(aqua, black, black);
+    animation: kotak 30s linear infinite;
+}
+.k2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px dotted aqua;
+    position: absolute;
+    background: radial-gradient(aqua, black, black);
+    animation: kotak2 30s linear infinite;
+}
+.ka {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 5px dotted aqua;
+    position: absolute;
+    background: radial-gradient(aqua, black, black);
+    animation: kotak3 7s linear infinite;
+}
+.kaa {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 5px dotted aqua;
+    position: absolute;
+    background: radial-gradient(aqua, black, black);
+    animation: kotak5 10s linear infinite;
+}
+.kb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 5px dotted aqua;
+    position: absolute;
+    background: radial-gradient(aqua, black, black);
+    animation: kotak4 5s linear infinite;
+}
+@keyframes kotak {
+    0% {
+        transform: translate(-5px,-5px);
+    }
+    25% {
+        transform: translate(245px,-5px) rotate(1turn);
+    }
+    50% {
+        transform: translate(245px,220px);
+    }
+    75% {
+        transform: translate(-5px,220px) rotate(1turn);
+    }
+    100% {
+        transform: translate(-5px,-5px);
+    }
+}
+@keyframes kotak2 {
+    0% {
+        transform: translate(245px,220px);
+    }
+    25% {
+        transform: translate(245px,-5px) rotate(1turn);
+    }
+    50% {
+        transform: translate(-5px,-5px);
+    }
+    75% {
+        transform: translate(-5px,220px) rotate(1turn);
+    }
+    100% {
+        transform: translate(270px,240px);
+    }
+}
+@keyframes kotak3 {
+    from {
+        transform: translate(10px,10px) rotate(0) translateX(40px) rotate(0);
+    }
+    to {
+        transform: translate(10px,10px) rotate(-360deg) translateX(40px) rotate(-360deg);
+    }
+}
+@keyframes kotak4 {
+    from {
+        transform: translate(10px,10px) rotate(0) translateX(40px) rotate(0);
+    }
+    to {
+        transform: translate(10px,10px) rotate(360deg) translateX(40px) rotate(360deg);
+    }
+}
+@keyframes kotak5 {
+    from {
+        transform: translate(-40px,-40px) rotate(0) translateX(0px) rotate(0);
+    }
+    to {
+        transform: translate(-40px,-40px) rotate(-360deg) translateX(0px) rotate(-360deg);
+    }
+}
+@keyframes con {
+    from {
+        transform: translate(0px,0px) rotate(0) translateX(5px) rotate(0);
+    }
+    to {
+        transform: translate(0px,0px) rotate(-360deg) translateX(5px) rotate(360deg);
+    }
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="k1">
+            <div class="ka">
+                <div class="kaa"></div>
+            </div>
+        </div>
+        <div class="k2">
+            <div class="kb"></div>
+        </div>
+    <form class="Login" action="">
+        <h2> Please Login</h2>
+        <abbr title="User Name"><input type="text" placeholder="User Name" name="" id=""></abbr>
+        
+        <abbr title="Password"><input type="password" placeholder="Password" name="" id=""></abbr>
+        <br>
+        <p> <input type="checkbox" name="Remember" id="centang"> <label for="centang">Remember Me</label></p>
+        <br>
+        <button type="submit">Login</button>
+        <br>
+        <a href="">Log up?</a>
+    </form>
+</div>
+<ul>&copy; 2023 - 2025</ul>
+</body>
+</html>
